@@ -1,0 +1,62 @@
+# Miscellaneous
+/SourceCode/e_commerce_app/*.class
+/SourceCode/e_commerce_app/*.log
+/SourceCode/e_commerce_app/*.pyc
+/SourceCode/e_commerce_app/*.swp
+/SourceCode/e_commerce_app/.DS_Store
+/SourceCode/e_commerce_app/.atom/
+/SourceCode/e_commerce_app/.buildlog/
+/SourceCode/e_commerce_app/.history
+/SourceCode/e_commerce_app/.svn/
+
+# IntelliJ related
+/SourceCode/e_commerce_app/*.iml
+/SourceCode/e_commerce_app/*.ipr
+/SourceCode/e_commerce_app/*.iws
+/SourceCode/e_commerce_app/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#/SourceCode/e_commerce_app/.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+/SourceCode/e_commerce_app/.dart_tool/
+/SourceCode/e_commerce_app/.flutter-plugins
+/SourceCode/e_commerce_app/.flutter-plugins-dependencies
+/SourceCode/e_commerce_app/.packages
+/SourceCode/e_commerce_app/.pub-cache/
+/SourceCode/e_commerce_app/.pub/
+/SourceCode/e_commerce_app/build/
+
+# Web related
+/SourceCode/e_commerce_app/lib/generated_plugin_registrant.dart
+
+# Symbolication related
+/SourceCode/e_commerce_app/app.*.symbols
+
+# Obfuscation related
+/SourceCode/e_commerce_app/app.*.map.json
+
+# Android Studio will place build artifacts here
+/SourceCode/e_commerce_app/android/app/debug
+/SourceCode/e_commerce_app/android/app/profile
+/SourceCode/e_commerce_app/android/app/release
+
+
+/SourceCode/e_commerce_app/.dart_tool
+/SourceCode/e_commerce_app/.gitignore
+/SourceCode/e_commerce_app/.idea
+/SourceCode/e_commerce_app/.metadata
+/SourceCode/e_commerce_app/.packages
+/SourceCode/e_commerce_app/analysis_options.yaml
+/SourceCode/e_commerce_app/android
+/SourceCode/e_commerce_app/build
+/SourceCode/e_commerce_app/e_commerce_app.iml
+/SourceCode/e_commerce_app/ios
+/SourceCode/e_commerce_app/pubspec.lock
+/SourceCode/e_commerce_app/README.md
+/SourceCode/e_commerce_app/web
+/SourceCode/e_commerce_app/windows
