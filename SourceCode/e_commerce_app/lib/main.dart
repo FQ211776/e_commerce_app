@@ -1,5 +1,6 @@
-import 'package:e_commerce_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/screens.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,21 +12,8 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
+      //? === HomeScreen ===
       home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      //? === appbar ===
-      appBar: CustomAppBar(title: 'Monte Tabor'),
-      //? === BottomNavigationBar ===
-      bottomNavigationBar: CustomNavBar(),
     );
   }
 }
