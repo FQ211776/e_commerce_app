@@ -22,12 +22,12 @@
 08 Wishlist Screen (Empty)<br>
 ![](/Docs/Images/20220418113506.png)
 ---
-09 Checkout Screen (Payment info)
-10 Checkout Screen (Delivery info)
-11 My Orders Screen (Empty)
-12 Order Details Screen
-13 My orders Screen
-14 Product Categories Screen
-15 User Profile Screen
+09 Checkout Screen (Payment info)<br>
+10 Checkout Screen (Delivery info)<br>
+11 My Orders Screen (Empty)<br>
+12 Order Details Screen<br>
+13 My orders Screen<br>
+14 Product Categories Screen<br>
+15 User Profile Screen<br>
 
 TODO made a description about what is in any screen
