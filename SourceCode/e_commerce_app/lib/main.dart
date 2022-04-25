@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -7,17 +8,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Sos un crack bro!'),
-        ),
-        body: const Center(
-          child: Text("Hello Robert"),
-        ),
-      ),
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      //? === appbar ===
+      appBar: CustomAppBar(title: 'Monte Tabor'),
+      //? === BottomNavigationBar ===
+      bottomNavigationBar: CustomNavBar(),
     );
   }
 }
