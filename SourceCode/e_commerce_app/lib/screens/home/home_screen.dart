@@ -9,19 +9,20 @@ class HomeScreen extends StatelessWidget {
 
   static Route route() {
     return MaterialPageRoute(
-      settings: const RouteSettings(name: routeName), builder: (_) => const HomeScreen(),
-    );}
+      settings: const RouteSettings(name: routeName),
+      builder: (_) => const HomeScreen(),
+    );
+  }
+
   const HomeScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       //? === appbar ===
       appBar: const CustomAppBar(title: 'Monte Tabor'),
       //? === BottomNavigationBar ===
       bottomNavigationBar: const CustomNavBar(),
-      body: Container(
-          child: CarouselSlider(
+      body: CarouselSlider(
         options: CarouselOptions(
           aspectRatio: 1.5, //  was 2.0 to make image taller
           viewportFraction: 0.9, // to made image wider
@@ -36,22 +37,19 @@ class HomeScreen extends StatelessWidget {
         items: Category.categories
             .map((category) => HeroCarouselCard(category: category))
             .toList(),
-      )),
+      ),
     );
   }
-
-
 }
 
 class HeroCarouselCard extends StatelessWidget {
-
   //? ************************************************************************
   //? this will create a list of widgets, and each of this widgets will be a
   //? container with the background image from the url list copiad above
 
   final Category category;
 
-  const HeroCarouselCard({required this.category});
+  const HeroCarouselCard({Key? key, required this.category}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +83,10 @@ class HeroCarouselCard extends StatelessWidget {
                       vertical: 10.0, horizontal: 20.0),
                   child: Text(
                     category.name,
-                    style: Theme.of(context).textTheme.headline2!.copyWith(color: Colors.white),
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline2!
+                        .copyWith(color: Colors.white),
                   ),
                 ),
               ),
