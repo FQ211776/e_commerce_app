@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/config/app_router.dart';
+import 'package:e_commerce_app/config/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/screens.dart';
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Funeraria Monte Tabor',
+      theme: theme(),
       onGenerateRoute: AppRouter.onGeneratedRoute,
       //? === HomeScreen ===
       initialRoute: HomeScreen.routeName,
