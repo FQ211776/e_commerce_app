@@ -28,7 +28,7 @@ class CustomNavBar extends StatelessWidget {
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, 'cart');
+                  Navigator.pushNamed(context, '/cart');
                 }),
             IconButton(
               icon: const Icon(
@@ -36,7 +36,7 @@ class CustomNavBar extends StatelessWidget {
                 color: Colors.white,
               ),
               onPressed: () {
-                Navigator.pushNamed(context, 'user');
+                Navigator.pushNamed(context, '/user');
               },
             )
           ],

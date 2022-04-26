@@ -17,11 +17,11 @@ class AppRouter {
       case '/cart':
         return CartScreen.route();
       case '/wishlist':
-      // return WishlistScreen.route();
+        return WishlistScreen.route();
       case '/products':
-      // return ProductScreen.route();
+        return ProductScreen.route();
       case '/catalog':
-      // return CatalogScreen.route();
+        return CatalogScreen.route();
       default:
         return _errorRoute();
     }
