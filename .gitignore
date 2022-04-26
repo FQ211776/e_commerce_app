@@ -18,7 +18,8 @@
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
-#/SourceCode/e_commerce_app/.vscode/
+/SourceCode/e_commerce_app/.vscode/
+/SourceCode/e_commerce_app/.vscode/*.json
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -60,3 +61,4 @@
 /SourceCode/e_commerce_app/README.md
 /SourceCode/e_commerce_app/web
 /SourceCode/e_commerce_app/windows
+.vscode/launch.json
