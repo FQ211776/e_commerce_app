@@ -12,11 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
+      title: 'Funeraria Monte Tabor',
       onGenerateRoute: AppRouter.onGeneratedRoute,
-      initialRoute: HomeScreen.routeName,
       //? === HomeScreen ===
-      home: HomeScreen(),
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
