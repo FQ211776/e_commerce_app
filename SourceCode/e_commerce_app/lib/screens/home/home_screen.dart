@@ -28,10 +28,9 @@ class HomeScreen extends StatelessWidget {
       'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
     ];
 
-
-	//? ************************************************************************
-	//? this will create a list of widgets, and each of this widgets will be a
-	//? container with the background image from the url list copiad above
+    //? ************************************************************************
+    //? this will create a list of widgets, and each of this widgets will be a
+    //? container with the background image from the url list copiad above
     final List<Widget> imageSliders = imgList
         .map((item) => Container(
               child: Container(
@@ -79,7 +78,17 @@ class HomeScreen extends StatelessWidget {
       appBar: CustomAppBar(title: 'Monte Tabor'),
       //? === BottomNavigationBar ===
       bottomNavigationBar: CustomNavBar(),
-      body: Container(),
+      body: Container(
+          child: CarouselSlider(
+        options: CarouselOptions(
+          aspectRatio: 2.0,
+          enlargeCenterPage: true,
+          enableInfiniteScroll: false,
+          initialPage: 2,
+          autoPlay: true,
+        ),
+        items: imageSliders,
+      )),
     );
   }
 }
