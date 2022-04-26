@@ -62,3 +62,4 @@
 /SourceCode/e_commerce_app/web
 /SourceCode/e_commerce_app/windows
 .vscode/launch.json
+SourceCode/e_commerce_app/pubspec.lock

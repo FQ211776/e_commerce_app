@@ -1,5 +1,5 @@
 name: e_commerce_app
-description: A new Flutter project.
+description: E-Commerce app to learn to use bloc library.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
