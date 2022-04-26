@@ -17,7 +17,7 @@ class CatalogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(
-        title: 'FQ211776 - Catalog',
+        title: 'Monte Tabor - Catalog',
       ),
       bottomNavigationBar: CustomNavBar(),
     );

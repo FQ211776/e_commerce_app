@@ -17,7 +17,7 @@ class WishlistScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(
-        title: 'FQ211776 - wishlist',
+        title: 'Monte Tabor - wishlist',
       ),
       bottomNavigationBar: CustomNavBar(),
     );
