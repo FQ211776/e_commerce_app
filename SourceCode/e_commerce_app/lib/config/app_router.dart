@@ -15,7 +15,7 @@ class AppRouter {
       case '/':
         return HomeScreen.route();
       case '/cart':
-      // return CartScreen.route();
+        return CartScreen.route();
       case '/wishlist':
       // return WishlistScreen.route();
       case '/products':
