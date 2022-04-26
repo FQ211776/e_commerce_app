@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Funeraria Monte Tabor',
-      theme: theme(),
+      //? === theme() es personalizado ===
+	  theme: theme(),
       onGenerateRoute: AppRouter.onGeneratedRoute,
       //? === HomeScreen ===
       initialRoute: HomeScreen.routeName,
