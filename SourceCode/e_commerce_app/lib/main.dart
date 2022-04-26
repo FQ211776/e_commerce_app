@@ -1,4 +1,8 @@
+import 'package:e_commerce_app/config/app_router.dart';
+import 'package:e_commerce_app/config/theme.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/screens.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,15 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Sos un crack bro!'),
-        ),
-        body: const Center(
-          child: Text("Hello Robert"),
-        ),
-      ),
+      title: 'Funeraria Monte Tabor',
+      //? === theme() es personalizado ===
+	  theme: theme(),
+      onGenerateRoute: AppRouter.onGeneratedRoute,
+      //? === HomeScreen ===
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
