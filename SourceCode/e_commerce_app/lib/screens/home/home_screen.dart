@@ -81,11 +81,14 @@ class HomeScreen extends StatelessWidget {
       body: Container(
           child: CarouselSlider(
         options: CarouselOptions(
-          aspectRatio: 1.5,  //  was 2.0
+          aspectRatio: 1.5,  //  was 2.0 to make image taller
+		  viewportFraction: 0.9, // to made image wider
           enlargeCenterPage: true,
-          enableInfiniteScroll: false,
-          initialPage: 2,
-          autoPlay: true,
+        //   enableInfiniteScroll: false,
+		enlargeStrategy: CenterPageEnlargeStrategy.height, /* reduce space
+		between cards*/
+        //   initialPage: 2,
+        //   autoPlay: true,
         ),
         items: imageSliders,
       )),
