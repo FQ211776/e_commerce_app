@@ -21,7 +21,11 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
             vertical: 10,
           ),
           //? === Text ===
-          child: Text(title, style: Theme.of(context).textTheme.headline2),
+          child: Text(title,
+              style: Theme.of(context)
+                  .textTheme
+                  .headline5!
+                  .copyWith(color: Colors.white)),
         ),
 
         //? === wishlist button ===
