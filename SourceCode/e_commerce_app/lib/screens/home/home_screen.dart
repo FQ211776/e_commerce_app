@@ -1,5 +1,6 @@
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:e_commerce_app/models/models.dart';
 import 'package:flutter/material.dart';
-
 import '../../widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,14 +15,31 @@ class HomeScreen extends StatelessWidget {
   }
 
   const HomeScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       //? === appbar ===
-      appBar: CustomAppBar(title: 'Monte Tabor'),
+      appBar: const CustomAppBar(title: 'Monte Tabor'),
       //? === BottomNavigationBar ===
-      bottomNavigationBar: CustomNavBar(),
+      bottomNavigationBar: const CustomNavBar(),
+      body: CarouselSlider(
+        options: CarouselOptions(
+          aspectRatio: 1.5, //  was 2.0 to make image taller
+          viewportFraction: 0.9, // to made image wider
+          enlargeCenterPage: true,
+          //   enableInfiniteScroll: false,
+          enlargeStrategy: CenterPageEnlargeStrategy
+              .height, /* reduce space
+		between cards*/
+          //   initialPage: 2,
+          //   autoPlay: true,
+        ),
+        items: Category.categories
+            .map((category) => HeroCarouselCard(category: category))
+            .toList(),
+      ),
     );
   }
 }
+
+
