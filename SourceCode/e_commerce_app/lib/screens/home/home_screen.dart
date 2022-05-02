@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
               Positioned(
                 top: 60,
                 child: Container(
-                  width: MediaQuery.of(context).size.width / 2.5 - 10,
+                  width: MediaQuery.of(context).size.width / 2.5,
                   height: 80,
                   decoration: BoxDecoration(
                     color: Colors.black.withAlpha(50),
@@ -66,12 +66,20 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 60,
+                top: 65,
+                left: 5,
                 child: Container(
                   width: MediaQuery.of(context).size.width / 2.5 - 10,
-                  height: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.black.withAlpha(50),
+                  height: 70,
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
+                  ),
+                  child: Row(
+                    children: [
+						Text(Product.products[0].name,
+						style: Theme.of(context).textTheme.headline6!.copyWith(color: Colors.white),
+						)
+					],
                   ),
                 ),
               ),
