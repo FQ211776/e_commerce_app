@@ -44,6 +44,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SectionTitle(title: 'RECOMMENDED'),
+		  
         ],
       ),
     );
