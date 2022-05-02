@@ -77,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                   child: Row(
                     children: [
 						Text(Product.products[0].name,
-						style: Theme.of(context).textTheme.headline6!.copyWith(color: Colors.white),
+						style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),
 						)
 					],
                   ),
