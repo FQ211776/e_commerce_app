@@ -45,10 +45,20 @@ class HomeScreen extends StatelessWidget {
           ),
           const SectionTitle(title: 'RECOMMENDED'),
           // ? === Product Card ===
-          ProductCard(product: Product.products[0],)
+          //   ProductCard(product: Product.products[0],)
+          SizedBox(
+            height: 165,
+            child: ListView.builder(
+              itemBuilder: ((context, index) {
+                return ProductCard(product: Product.products[index]);
+              }),
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemCount: Product.products.length,
+            ),
+          )
         ],
       ),
     );
   }
 }
-
