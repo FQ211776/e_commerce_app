@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: Text(
                 'RECOMMENDED',
-                style: Theme.of(context).textTheme.headline3,
+                style: Theme.of(context).textTheme.headline6,
               ),
             ),
           )
