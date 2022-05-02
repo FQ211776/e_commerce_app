@@ -81,6 +81,13 @@ class HomeScreen extends StatelessWidget {
 						    Text(Product.products[0].name,
 						    style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),
 						    ),
+							Text(
+                            Product.products[0].name,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyText2!
+                                .copyWith(color: Colors.white),
+                          ),
 						  ],
 						)
 					],
