@@ -44,11 +44,19 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SectionTitle(title: 'RECOMMENDED'),
-		  
+          //? === Procuct Card ===
+          Stack(children: [
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 2.5,
+              height: 150,
+              child: Image.network(
+                Product.products[0].imageUrl,
+                fit: BoxFit.cover,
+              ),
+            )
+          ])
         ],
       ),
     );
   }
 }
-
-
