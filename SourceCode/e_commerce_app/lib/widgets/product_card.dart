@@ -65,15 +65,15 @@ class ProductCard extends StatelessWidget {
                               .bodyText1!
                               .copyWith(color: Colors.white),
                         ),
-                        Expanded(
-                            child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.add_circle),
-                          color: Colors.white,
-                        ))
                       ],
                     ),
-                  )
+                  ),
+                  Expanded(
+                      child: IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.add_circle),
+                    color: Colors.white,
+                  ))
                 ],
               ),
             ),
