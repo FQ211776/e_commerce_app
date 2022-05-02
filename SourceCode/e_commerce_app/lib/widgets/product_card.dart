@@ -14,7 +14,7 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SizedBox(
+        Container(
           width: MediaQuery.of(context).size.width / 2.5,
           height: 150,
           child: Image.network(
