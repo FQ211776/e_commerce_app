@@ -25,7 +25,7 @@ class ProductCard extends StatelessWidget {
         Positioned(
           top: 60,
           child: Container(
-            width: MediaQuery.of(context).size.width / 2.5,
+            width: MediaQuery.of(context).size.width / 2.5 -10,
             height: 80,
             decoration: BoxDecoration(
               color: Colors.black.withAlpha(50),
