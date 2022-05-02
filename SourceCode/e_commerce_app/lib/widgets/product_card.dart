@@ -59,7 +59,7 @@ class ProductCard extends StatelessWidget {
                               .copyWith(color: Colors.white),
                         ),
                         Text(
-                          '\$${Product.products[0].price}',
+                          '\$${product.price}',
                           style: Theme.of(context)
                               .textTheme
                               .bodyText1!
