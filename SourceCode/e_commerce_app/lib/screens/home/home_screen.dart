@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       //? === appbar ===
-      appBar: const CustomAppBar(title: 'Monte Tabor'),
+      appBar: const CustomAppBar(title: 'Home'),
       //? === BottomNavigationBar ===
       bottomNavigationBar: const CustomNavBar(),
       body: CarouselSlider(

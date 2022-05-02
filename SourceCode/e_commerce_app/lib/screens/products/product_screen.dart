@@ -17,7 +17,7 @@ class ProductScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(
-        title: 'Monte Tabor - Product',
+        title: 'Product',
       ),
       bottomNavigationBar: CustomNavBar(),
     );
