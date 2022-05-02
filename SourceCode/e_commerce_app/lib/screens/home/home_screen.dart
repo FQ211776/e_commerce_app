@@ -76,21 +76,27 @@ class HomeScreen extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-						Column(
-						  children: [
-						    Text(Product.products[0].name,
-						    style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),
-						    ),
-							Text(
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
                             Product.products[0].name,
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyText2!
                                 .copyWith(color: Colors.white),
                           ),
-						  ],
-						)
-					],
+                          Text(
+                            '\$${Product.products[0].price}',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyText1!
+                                .copyWith(color: Colors.white),
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                 ),
               ),
