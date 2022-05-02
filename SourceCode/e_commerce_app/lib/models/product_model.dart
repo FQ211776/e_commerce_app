@@ -34,7 +34,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: false,
-    ),
+    ),  
     const Product(
       name: 'Soft Drink #2',
       category: 'Soft Drinks',
