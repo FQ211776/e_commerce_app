@@ -25,7 +25,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
             child: Text(title,
                 style: Theme.of(context)
                     .textTheme
-                    .headline5!
+                    .headline6!
                     .copyWith(color: Colors.white)),
           ),
         ),
