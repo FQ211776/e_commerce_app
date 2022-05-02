@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
           // ? === Product Card ===
           Stack(
             children: [
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width / 2.5,
                 height: 150,
                 child: Image.network(
@@ -55,11 +55,24 @@ class HomeScreen extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              Container(
-                width: MediaQuery.of(context).size.width / 2.5 - 10,
-                height: 80,
-                decoration: BoxDecoration(
-                  color: Colors.black.withAlpha(50),
+              Positioned(
+                top: 60,
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 2.5 - 10,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.black.withAlpha(50),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 60,
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 2.5 - 10,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    color: Colors.black.withAlpha(50),
+                  ),
                 ),
               ),
             ],
