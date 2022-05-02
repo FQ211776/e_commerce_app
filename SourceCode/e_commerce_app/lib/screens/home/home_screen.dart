@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           const SectionTitle(title: 'RECOMMENDED'),
-          //? === Procuct Card ===
+         // ? === Product Card ===
           Stack(children: [
             SizedBox(
               width: MediaQuery.of(context).size.width / 2.5,
