@@ -43,6 +43,16 @@ class HomeScreen extends StatelessWidget {
                   .toList(),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                'RECOMMENDED',
+                style: Theme.of(context).textTheme.headline3,
+              ),
+            ),
+          )
         ],
       ),
     );
