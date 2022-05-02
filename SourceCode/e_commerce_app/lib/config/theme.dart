@@ -37,7 +37,7 @@ TextTheme textTheme() {
     ),
     headline6: TextStyle(
       color: Colors.black,
-      fontSize: 10,
+      fontSize: 1,
       fontWeight: FontWeight.normal,
     ),
     bodyText1: TextStyle(
