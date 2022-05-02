@@ -78,25 +78,34 @@ class HomeScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              Product.products[0].name,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyText2!
-                                  .copyWith(color: Colors.white),
-                            ),
-                            Text(
-                              '\$${Product.products[0].price}',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyText1!
-                                  .copyWith(color: Colors.white),
-                            ),
-                          ],
+                        Expanded(
+                          flex: 3,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                Product.products[0].name,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyText2!
+                                    .copyWith(color: Colors.white),
+                              ),
+                              Text(
+                                '\$${Product.products[0].price}',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyText1!
+                                    .copyWith(color: Colors.white),
+                              ),
+                              Expanded(
+                                  child: IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.add_circle),
+                                color: Colors.white,
+                              ))
+                            ],
+                          ),
                         )
                       ],
                     ),
