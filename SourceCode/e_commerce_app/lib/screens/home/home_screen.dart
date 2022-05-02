@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce_app/models/models.dart';
 import 'package:flutter/material.dart';
+
 import '../../widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,27 +20,45 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       //? === appbar ===
-      appBar: const CustomAppBar(title: 'Monte Tabor'),
+      appBar: const CustomAppBar(title: 'Home'),
       //? === BottomNavigationBar ===
       bottomNavigationBar: const CustomNavBar(),
-      body: CarouselSlider(
-        options: CarouselOptions(
-          aspectRatio: 1.5, //  was 2.0 to make image taller
-          viewportFraction: 0.9, // to made image wider
-          enlargeCenterPage: true,
-          //   enableInfiniteScroll: false,
-          enlargeStrategy: CenterPageEnlargeStrategy
-              .height, /* reduce space
+      body: Column(
+        children: [
+          Container(
+            child: CarouselSlider(
+              options: CarouselOptions(
+                aspectRatio: 1.5, //  was 2.0 to make image taller
+                viewportFraction: 0.9, // to made image wider
+                enlargeCenterPage: true,
+                //   enableInfiniteScroll: false,
+                enlargeStrategy: CenterPageEnlargeStrategy
+                    .height, /* reduce space
 		between cards*/
-          //   initialPage: 2,
-          //   autoPlay: true,
-        ),
-        items: Category.categories
-            .map((category) => HeroCarouselCard(category: category))
-            .toList(),
+                //   initialPage: 2,
+                //   autoPlay: true,
+              ),
+              items: Category.categories
+                  .map((category) => HeroCarouselCard(category: category))
+                  .toList(),
+            ),
+          ),
+          const SectionTitle(title: 'RECOMMENDED'),
+          // ? === Product Card ===
+          //   ProductCard(product: Product.products[0],)
+          ProductCarousel(
+              products: Product.products
+                  .where((product) => product.isRecommended)
+                  .toList()),
+          const SectionTitle(title: 'MOST POPULAR'),
+          // ? === Product Card ===
+          //   ProductCard(product: Product.products[0],)
+          ProductCarousel(
+              products: Product.products
+                  .where((product) => product.isPopular)
+                  .toList()),
+        ],
       ),
     );
   }
 }
-
-
