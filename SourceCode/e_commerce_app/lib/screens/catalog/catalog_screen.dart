@@ -18,8 +18,9 @@ class CatalogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-final List<Products> categoryProducts = Product.products.where((product) => product.category == category.name).toList();
-
+    final List<Product> categoryProducts = Product.products
+        .where((product) => product.category == category.name)
+        .toList();
 
     return Scaffold(
         appBar: CustomAppBar(
@@ -27,13 +28,15 @@ final List<Products> categoryProducts = Product.products.where((product) => prod
         ),
         bottomNavigationBar: const CustomNavBar(),
         body: GridView.builder(
-			padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, childAspectRatio: 1.15),
           itemCount: 3,
           itemBuilder: (BuildContext context, int index) {
-            return Center(child: ProductCard(product: Product.products[0]),
-			widthFactor: 2.2,);
+            return Center(
+              child: ProductCard(product: Product.products[0]),
+              widthFactor: 2.2,
+            );
           },
         )
 
