@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/models/category_model.dart';
+import 'package:e_commerce_app/models/models.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/widgets.dart';
@@ -23,6 +24,7 @@ class CatalogScreen extends StatelessWidget {
         title: category.name, // <-- nombre de la categoría
       ),
       bottomNavigationBar: const CustomNavBar(),
+	  body: ProductCard(product: Product.products[0],),
     );
   }
 }
