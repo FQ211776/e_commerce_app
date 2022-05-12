@@ -17,7 +17,7 @@ class ProductCard extends StatelessWidget {
     return Stack(
       children: [
         SizedBox(
-          width: MediaQuery.of(context).size.width / 2.5,
+          width: MediaQuery.of(context).size.width / widthFactor,
           height: 150,
           child: Image.network(
             product.imageUrl,
