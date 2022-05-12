@@ -2,6 +2,7 @@
 
 import 'dart:developer';
 
+import 'package:e_commerce_app/models/category_model.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/screens.dart';
@@ -21,7 +22,7 @@ class AppRouter {
       case '/products':
         return ProductScreen.route();
       case '/catalog':
-        return CatalogScreen.route();
+        return CatalogScreen.route(category: settings.arguments as Category);
       default:
         return _errorRoute();
     }
