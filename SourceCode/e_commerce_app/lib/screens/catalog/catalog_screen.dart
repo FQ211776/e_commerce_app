@@ -20,7 +20,7 @@ class CatalogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        title: category.name,
+        title: category.name, // <-- nombre de la categoría
       ),
       bottomNavigationBar: const CustomNavBar(),
     );
