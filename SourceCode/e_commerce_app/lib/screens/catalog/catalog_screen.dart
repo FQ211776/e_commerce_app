@@ -31,10 +31,10 @@ class CatalogScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, childAspectRatio: 1.15),
-          itemCount: 3,
+          itemCount: categoryProducts.length,
           itemBuilder: (BuildContext context, int index) {
             return Center(
-              child: ProductCard(product: Product.products[0]),
+              child: ProductCard(product: categoryProducts[index]),
               widthFactor: 2.2,
             );
           },
