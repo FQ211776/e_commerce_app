@@ -9,7 +9,7 @@ class CatalogScreen extends StatelessWidget {
   static Route route({required Category category}) {
     return MaterialPageRoute(
         settings: const RouteSettings(name: routeName),
-        builder: (_) => CatalogScreen(category: category));
+        builder: (context) => CatalogScreen(category: category));
   }
 
   final Category category;
